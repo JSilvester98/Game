@@ -2,15 +2,20 @@
 
 $('.inputs').change(function()
 {
+    // Alocating names for each of the input boxes
 
     var firstBox = $(".inputs")[0]
     var secondBox = $(".inputs")[1]
     var thirdBox = $(".inputs")[2]
 
+    // Answers
+
     var firstBoxValid = firstBox.value.toLowerCase() == "eleven";
     var secondBoxValid = secondBox.value.toLowerCase() == "twelve";
     var thirdBoxValid = thirdBox.value.toLowerCase() == "twenty";
 
+    // Traffic light validation system
+    
     if(firstBoxValid) {
         firstBox.style.backgroundColor = 'green';
     } else if(firstBox.value == "")
@@ -42,10 +47,12 @@ $('.inputs').change(function()
         window.location.href = "Congratulations.html"
 });
 
-// Code for timer //
+// Code for timer
 
 var minutes = 8;
 var totalSecondsRemaining = minutes * 60;
+
+// What happens when the timer runs out
 
 function countDown()
 {
@@ -56,6 +63,8 @@ function countDown()
         return;
     }
 
+    // Timer goes red when there is less than 60 seconds left on the timer
+
     totalSecondsRemaining -= 1;
 
     if(totalSecondsRemaining < 60) {
@@ -65,5 +74,7 @@ function countDown()
 }
 
 interval = setInterval(countDown, 1000);
+
+// This function converts a number into seconds - For example 101 = 1 minuite 41 seconds
 
 function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
