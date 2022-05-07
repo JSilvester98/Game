@@ -1,0 +1,106 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 20px;
+}
+
+main p {
+    text-align: center;
+    font-size: 24px;
+    margin: 10px;
+}
+
+main a {
+    border: 1px solid black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    font-size: larger;
+    box-shadow: 0 10px 10px rgba(0, 0, 0,.7);
+    transition: all 0.5s;
+}
+
+#inputs-wrapper {
+    height: 40%;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#inputs-wrapper input {
+    border: 1px solid black;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+#inputs-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#timer {
+    font-size: 48px;
+}
+
+b {
+    font-size: xx-large;
+}
+
+a:hover {
+    background-color: #C3A03E;
+}
+
+.Congratulations-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size:xx-large
+}
+
+.Answers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.Answers p {
+    transition: transform 0.2s ease-in-out;
+}
+
+.Answers p:hover {
+    transform: scale(2); 
+}
+
+.AOL p {
+    font-size: xx-large;
+    margin: auto;
+}
+
+img {
+    max-width: 300px;
+    max-height: auto;
+    float: right;
+    
+}
