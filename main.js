@@ -76,5 +76,7 @@ function countDown()
 interval = setInterval(countDown, 1000);
 
 // This function converts a number into seconds - For example 101 = 1 minuite 41 seconds
+// This was found online at https://code-examples.net/en/q/38f6eb
+
 
 function fmtMSS(s){return(s-(s%=60))/60+(9<s?':':':0')+s}
